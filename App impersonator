@@ -1,0 +1,23 @@
+CREATE TABLE lose_it (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    name TEXT,
+    weight TEXT,
+    workout_type TEXT,
+    minutes INTEGER);
+
+INSERT INTO lose_it (name, weight, workout_type, minutes) VALUES ("Tim", 180, "running", 30);
+INSERT INTO lose_it (name, weight, workout_type, minutes) VALUES ("Sophia", 129, "stairs", 20);
+INSERT INTO lose_it (name, weight, workout_type, minutes) VALUES ("James", 155, "biking", 45);
+INSERT INTO lose_it (name, weight, workout_type, minutes) VALUES ("Kim", 145, "powerlifter", 60);
+INSERT INTO lose_it (name, weight, workout_type, minutes) VALUES ("Zoe", 133, "swimming", 15);
+
+SELECT AVG(minutes) FROM lose_it;
+SELECT * FROM lose_it WHERE minutes < 35;
+
+SELECT * FROM lose_it;
+UPDATE lose_it set name = "Zoey"
+WHERE id = 5;
+
+SELECT * FROM lose_it;
+DELETE FROM lose_it 
+WHERE id = 4;
