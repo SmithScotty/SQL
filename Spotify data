@@ -1,0 +1,17 @@
+What is the average danceability by artist and track? 
+SELECT artist_name, AVG(danceability) as avg_danceability
+FROM Spotifydata
+GROUP BY artist_name 
+ 
+Who are the top 10 artists based on popularity?
+SELECT artist_name, popularity
+FROM Spotifydata
+ORDER BY popularity DESC
+LIMIT 10
+
+
+What artist released the longest song?
+SELECT artist_name
+FROM Spotifydata
+WHERE duration_ms = (SELECT MAX(duration_ms) FROM Spotifydata)
+
