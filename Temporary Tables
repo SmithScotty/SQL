@@ -22,7 +22,6 @@ HAVING AVG(popularity) >= 90
  
 Answer Walkthrough
 First, you need to define your CTE using a WITH statement. That's followed by the name of the CTE, which we can call popularity_average_CTE in this case. A CTE query is then defined in between the parentheses. When you look at it on its own, it’s not complicated; it's a basic SELECT query. It selects artist_name, and calculates the average popularity, using the column popularity FROM the table SpotifyData. (Note how we didn't specify the database name, BIT_DB, like we usually do when writing SQL. This is because SQLite Studio assumes that you want to use whichever database you're already connected to for the CTE.) The result is shown in the new column average_popularity. The result is grouped by the column artist_name. The records are grouped because you need to obtain the result by artist.
-
 After the CTE is defined, there’s another SELECT query that uses the CTE. This query selects the columns artist_nameand average_popularity from the CTE. It also assigns the value “Top Star.” There is a WHERE clause at the end to show only those artists with an average popularity of 90 or above.
 
-Running the entire query will result in the names and average popularity of the Top Stars. 
+ 
