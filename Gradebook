@@ -1,3 +1,7 @@
+In this first step, select all of the rows, and display the name, number_grade, and percent_completed, which you can compute by multiplying and rounding the fraction_completed column.
+
+
+
 CREATE TABLE student_grades (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     name TEXT,
