@@ -1,5 +1,11 @@
-In this first step, select all of the rows, and display the name, number_grade, and percent_completed, which you can compute by multiplying and rounding the fraction_completed column.
+Step 1
+In this first step, select all of the rows, and display the name, number_grade, and percent_completed, 
+which you can compute by multiplying and rounding the fraction_completed column.
 
+Step 2
+The goal is a table that shows how many students have earned which letter_grade. You can output the letter_grade by using CASE with the number_grade column, 
+outputting 'A' for grades > 90, 'B' for grades > 80,
+'C' for grades > 70, and 'F' otherwise. Then you can use COUNT with GROUP BY to show the number of students with each of those grades.
 
 
 CREATE TABLE student_grades (
