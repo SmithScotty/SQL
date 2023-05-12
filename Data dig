@@ -1,9 +1,10 @@
-/*
-Winston's Donut logs
-This table of logs shows how many donuts Winston eats at each year of his life,
-plus any particular reason to explain his eating habits.
-Collected by: https://www.khanacademy.org/profile/mhogwarts/
- */
+What are average, max, and min values in the data?
+What about those numbers per category in the data (using HAVING)?
+What ways are there to group the data values that don’t exist yet (using CASE)?
+What interesting ways are there to filter the data (using AND/OR)?
+
+
+
 CREATE TABLE winstons_donut_logs (
     id TEXT PRIMARY KEY,
     status TEXT,
@@ -87,3 +88,9 @@ GROUP BY donuts_eaten;
 SELECT status FROM winstons_donut_logs;
 SELECT status FROM winstons_donut_logs WHERE reason = "No diet" OR donuts_eaten > 1000;
 SELECT status FROM winstons_donut_logs WHERE reason = "Die" AND donuts_eaten > 500 AND donuts_eaten < 300;
+SELECT MAX(donuts_sold) AS max_donuts_sold
+FROM winstons_donut_logs;
+SELECT MIN(donuts_sold) AS min_donuts_sold
+FROM winstons_donut_logs;
+
+
