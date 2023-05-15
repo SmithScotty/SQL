@@ -1,3 +1,6 @@
+With a sequel_id column that matches the id of the sequel for each movie. 
+Issue a SELECT that will show the title of each movie next to its sequel's title
+
 CREATE TABLE movies (id INTEGER PRIMARY KEY AUTOINCREMENT,
     title TEXT,
     released INTEGER,
