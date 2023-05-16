@@ -1,3 +1,5 @@
+JOIN to display a table showing people's names with their hobbies.
+
 CREATE TABLE persons (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     fullname TEXT,
