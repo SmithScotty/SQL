@@ -1,3 +1,10 @@
+use UPDATE to change the author to 'Jackie Draper' for all rows where it's currently 'Jackie Paper'. 
+Then re-select all the rows to make sure the table changed like you expected.
+
+Only delete the row where the title is 'Things I'm Afraid Of'.
+Then re-select all the rows to make sure the table changed like you expected.
+
+
 CREATE table documents (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     title TEXT,
@@ -16,11 +23,9 @@ INSERT INTO documents (author, title, content)
     VALUES ("Jackie Paper", "Things I'm Afraid Of", "Talking to my parents, the sea, giant pirates, heights.");
 
 SELECT * FROM documents;
-
 UPDATE documents set content = "Jackie Draper";
-
 SELECT * FROM documents;
 
+SELECT * FROM documents;
 DELETE FROM documents WHERE id = 5;
-
 SELECT * FROM documents;
