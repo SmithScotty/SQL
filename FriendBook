@@ -35,10 +35,10 @@ INSERT INTO friends (person1_id, person2_id)
 INSERT INTO friends (person1_id, person2_id)
     VALUES (2, 3);
     
-SELECT persons.fullname,hobbies.name
+SELECT persons.fullname, hobbies.name
 FROM persons
 JOIN hobbies
-ON hobbies.person_id=persons.id;
+ON hobbies.person_id = persons.id;
 
 SELECT a.fullname, b.fullname FROM friends
     JOIN persons a
