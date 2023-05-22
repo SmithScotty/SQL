@@ -9,7 +9,7 @@ How many of those orders were for an iPhone?
 
 SELECT COUNT(orderid)
 FROM BIT_DB.JanSales
-WHERE Product='iPhone';
+WHERE Product='iPhone'
 
 Select the customer account numbers for all the orders that were placed in February.
 
