@@ -1,7 +1,9 @@
 What columns are in the customers table?
+
 SELECT * FROM BIT_DB.customers LIMIT 20;
 
 What columns are in the JanSales table?
+
 SELECT * FROM BIT_DB.JanSales LIMIT 20;
 
 Dealing with "messy data"
