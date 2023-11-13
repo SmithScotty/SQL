@@ -1,6 +1,5 @@
-First step, create a table to store your list of books. 
+#1. First step, create a table to store your list of books. 
 It should have columns for id, name, and rating.
-
 
 
 /** Book list: 
