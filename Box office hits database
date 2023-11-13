@@ -1,6 +1,8 @@
-Select all the movies.
+#1. Select all the movies.
 That retrieves only the movies that were released in the year 2000 or later, not before. 
- 
+
+#2. Now, add a second query after the first, that retrieves only the movies that were released in the year 2000 or later, not before.
+Sort the results so that the earlier movies are listed first. You should have 2 SELECT statements after this step. 
 
 CREATE TABLE movies (id INTEGER PRIMARY KEY, name TEXT, release_year INTEGER);
 
