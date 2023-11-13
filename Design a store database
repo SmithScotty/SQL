@@ -3,24 +3,24 @@ You should have a table for all the items in your store, and at least 5 columns 
 and use select statements to order your items by price and show at least one statistic about the items.
 
 
-CREATE TABLE sweatshirts (ID INTEGER PRIMARY KEY, Small TEXT, BRAND TEXT, AISLE INTEGER, PRICE INTEGER, COLOR TEXT);
+CREATE TABLE sweatshirts (ID INTEGER PRIMARY KEY, BRAND TEXT, AISLE INTEGER, PRICE INTEGER, COLOR TEXT);
 
-INSERT INTO sweatshirts VALUES (1, "Vans", "Nike & Adidas", 6, 70, "Green");
-INSERT INTO sweatshirts VALUES (2, "Burton", "Nike & Adidas", 2, 45, "Red");
-INSERT INTO sweatshirts VALUES (3, "The North Face", "Nike & Adidas", 3, 40, "pink");
-INSERT INTO sweatshirts VALUES (4, "Hurley", "Nike & Adidas", 5, 35, "Red");
-INSERT INTO sweatshirts VALUES (5, "Vans", "Nike & Adidas", 6, 70,"Green");
-INSERT INTO sweatshirts VALUES (6, "Burton", "Nike & Adidas", 2, 45,"Black");
-INSERT INTO sweatshirts VALUES (7, "Vans", "Nike & Adidas", 6, 70, "Red");
-INSERT INTO sweatshirts VALUES (8, "Vans", "Nike & Adidas", 6, 70,"Black");
-INSERT INTO sweatshirts VALUES (9, "The North Face", "Nike & Adidas", 3, 40,"Green");
-INSERT INTO sweatshirts VALUES (10, "Vans", "Nike & Adidas", 6, 70,"Black");
-INSERT INTO sweatshirts VALUES (11, "Hurley", "Nike & Adidas", 5, 70, "Green");
-INSERT INTO sweatshirts VALUES (12, "Burton", "Nike & Adidas", 2, 45,"Black");
-INSERT INTO sweatshirts VALUES (13, "The North Face", "Nike & Adidas", 3, 40, "pink");
-INSERT INTO sweatshirts VALUES (14, "The North Face", "Nike & Adidas", 3, 40,"Green");
-INSERT INTO sweatshirts VALUES (15, "Vans", "Nike & Adidas", 6, 70,"Black");
+INSERT INTO sweatshirts VALUES (1, "Carhartt", 1, 45,"gray");
+INSERT INTO sweatshirts VALUES (2, "Nike", 2, 25, "blue");
+INSERT INTO sweatshirts VALUES (3, "Under Armour", 3, 55, "black");
+INSERT INTO sweatshirts VALUES (4, "Champion", 4, 35, "yellow");
+INSERT INTO sweatshirts VALUES (5, "Carhartt", 1, 45, "green");
+INSERT INTO sweatshirts VALUES (6, "Nike", 2, 25, "teal");
+INSERT INTO sweatshirts VALUES (7, "Under Armour", 3, 55, "beige");
+INSERT INTO sweatshirts VALUES (8, "Champion", 4, 35, "gary");
+INSERT INTO sweatshirts VALUES (9, "Carhartt", 1, 45, "blue");
+INSERT INTO sweatshirts VALUES (10, "Nike", 2, 25, "green");
+INSERT INTO sweatshirts VALUES (11, "Under Armour", 3, 55, "white");
+INSERT INTO sweatshirts VALUES (12, "Carhartt", 1, 45, "white");
+INSERT INTO sweatshirts VALUES (13, "Nike", 2, 25, "white");
+INSERT INTO sweatshirts VALUES (14, "Champion", 4, 35, "white");
+INSERT INTO sweatshirts VALUES (15, "Carhartt", 1, 45, "tan");
 
-SELECT * FROM sweatshirts ORDER BY aisle; 
+SELECT * FROM sweatshirts ORDER BY aisle;
 SELECT SUM(PRICE) FROM sweatshirts; 
-SELECT * FROM sweatshirts WHERE price < 70 ORDER BY AISLE;
+SELECT * FROM sweatshirts WHERE price < 45 ORDER BY AISLE;
