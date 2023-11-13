@@ -1,15 +1,9 @@
-For the first step, select all the song titles.
+#1. For the first step, select all the song titles.
 Add another SELECT that uses OR to show the titles of the songs that have an 'epic' mood or a release date after 1990.
 SELECT that uses AND to show the titles of songs that are 'epic', and released after 1990, and less than 4 minutes long.
 
 
-CREATE TABLE songs (
-    id INTEGER PRIMARY KEY,
-    title TEXT,
-    artist TEXT,
-    mood TEXT,
-    duration INTEGER,
-    released INTEGER);
+CREATE TABLE songs (id INTEGER PRIMARY KEY, title TEXT, artist TEXT, mood TEXT, duration INTEGER, released INTEGER);
     
 INSERT INTO songs (title, artist, mood, duration, released)
     VALUES ("Bohemian Rhapsody", "Queen", "epic", 60, 1975);
@@ -29,11 +23,9 @@ INSERT INTO songs (title, artist, mood, duration, released)
     VALUES ("Call me maybe", "Carly Rae Jepsen", "happy", 193, 2011);
  
 SELECT title FROM songs;
+
+ SELECT title FROM songs 
+  WHERE  mood = "epic" OR released >1990;
   
-  SELECT title FROM songs 
-  WHERE "epic" = mood;
-  
-  SELECT title FROM songs
-  WHERE "epic" = mood 
-  AND released >1990
-  AND duration >240;
+SELECT title FROM songs
+WHERE mood = "eqic" AND released >1990 AND duration >240;
