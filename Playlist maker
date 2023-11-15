@@ -1,8 +1,8 @@
-Select the title of all the songs by the artist named 'Queen'.
+#1. Select the title of all the songs by the artist named 'Queen'.
 
-Select the name of all of the artists from the 'Pop' genre.
+#2. Select the name of all of the artists from the 'Pop' genre.
 
-Creating the 'Pop' playlist, add another query that will select the title of all the songs from the 'Pop' artists. 
+#3. Creating the 'Pop' playlist, add another query that will select the title of all the songs from the 'Pop' artists. 
 It should use IN on a nested subquery that's based on your previous query.
 
 
