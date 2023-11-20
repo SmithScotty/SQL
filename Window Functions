@@ -1,8 +1,4 @@
-OVER designates the function as a window function.
-PARTITION BY is a clause you can use in a window function. It divides the results into partitions, 
-and performs the window function on each set of partitioned data.
-
-
+#1.
 Bike lanes with an average safety rating of 4 or more should be labeled "Leave As-Is".
 Bike lanes with an average safety rating of less than 2.5 should be labeled as "Remove".
 All other bike lanes should be labeled as "Improvements Needed"
