@@ -1,5 +1,5 @@
 #1. Dealing with "messy data"
 SELECT * FROM BIT_DB.customers LIMIT 20;
 
-#2.What columns are in the JanSales table?
+#2. What columns are in the JanSales table?
 SELECT * FROM BIT_DB.JanSales LIMIT 20;
