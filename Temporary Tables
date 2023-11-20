@@ -1,23 +1,24 @@
-Calculate the average popularity for the artists in the Spotify data table. 
-Then, for every artist with an average popularity of 90 or above, show their name, their average popularity, and label them as a “Top Star”.
- 
- SELECT artist_name, AVG(popularity) AS avg_popularity, 'Top Star' as label  
-FROM Spotifydata
-GROUP BY artist_name
-HAVING AVG(popularity) >= 90 
+#1. Calculate the average popularity for the artists in the Spotify data table. 
+#2. With an average popularity of 90 or above, show their name, their average popularity, and label them as a “Top Star”.
+#.3 Using a CTE.
 
-Using a CTE.
-
-WITH popularity_average_CTE AS (
-SELECT s.artist_name,
-AVG(s.popularity) AS average_popularity
-FROM SpotifyData s 
-GROUP BY s.artist_name
-)
-
+#1.
 SELECT artist_name, AVG(popularity) AS avg_popularity, 'Top Star' as label  
 FROM Spotifydata
 GROUP BY artist_name
 HAVING AVG(popularity) >= 90 
- 
 
+
+#2.
+SELECT artist_name, AVG(popularity) AS avg_popularity, 'Top Star' as label  
+FROM Spotifydata
+GROUP BY artist_name
+HAVING AVG(popularity) >= 90 
+
+ 
+#3.
+WITH popularity_average_CTE AS (
+SELECT s.artist_name,
+AVG(s.popularity) AS average_popularity
+FROM SpotifyData s 
+GROUP BY s.artist_name)
