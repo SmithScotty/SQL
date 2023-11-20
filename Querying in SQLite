@@ -1,18 +1,5 @@
-What columns are in the customers table?
-
+#1. Dealing with "messy data"
 SELECT * FROM BIT_DB.customers LIMIT 20;
 
-What columns are in the JanSales table?
-
+#2.What columns are in the JanSales table?
 SELECT * FROM BIT_DB.JanSales LIMIT 20;
-
-Dealing with "messy data"
-SELECT * FROM BIT_DB.customers WHERE order_id <> ''
-AND order_id <> 'Order ID';
-
-WHERE order_id <> ''
-AND order_id <> 'Order ID'
-
-<> means "does not equal"
-
-'' means a blank cell
