@@ -2,7 +2,6 @@
 #2. Use a DELETE to emulate what happens when you delete data in the app.
 
 
-
 #1. SELECT AVG(minutes) FROM lose_it; SELECT * FROM lose_it WHERE minutes < 35;
 
 #1. SELECT * FROM lose_it; UPDATE lose_it set name = "Zoey" WHERE id = 5;
