@@ -1,0 +1,6 @@
+#1. Calculate how much is spent per year on the salaries for each department where the total spent on the salaries is at least $300,000. 
+
+SELECT department, SUM(salary) AS total_spent
+FROM employees
+GROUP BY department
+HAVING SUM(salary) >= 300000;
