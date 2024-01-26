@@ -1,3 +1,7 @@
 #1. First step, create a table to store your list of books. It should have columns for id, name, and rating.
 
-#1. SELECT * FROM Books;
+CREATE TABLE booklist (id INTEGER, name TEXT, rating INTEGER);
+
+INSERT INTO booklist VALUES (1, "Harry Potter", 3); 
+INSERT INTO booklist VALUES (2, "Pale Blue Dot", 2);
+INSERT INTO booklist VALUES (3, "Jurassic Park", 1);
