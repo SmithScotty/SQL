@@ -1,4 +1,4 @@
-#1. First step, create a table to store your list of books. It should have columns for id, name, and rating.
+1. First step, create a table to store your list of books. It should have columns for id, name, and rating.
 
 CREATE TABLE booklist (id INTEGER, name TEXT, rating INTEGER);
 
