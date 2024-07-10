@@ -19,3 +19,4 @@ IN (SELECT product_id
 FROM products
 WHERE product_type="Internet");
 
+.
