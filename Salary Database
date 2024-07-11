@@ -7,7 +7,8 @@ HAVING SUM(salary) >= 300000;
 
 
 
-#2. Select all the departments that pay an average of at least $70,000 per year.
+#2. Select all the departments that pay an average of at least $70,000 per year. Your results table should include the department and average salary for that department, 
+and you should rename the average salary column using an alias.
 
 SELECT department, AVG(salary) AS average_salary
 FROM employees
