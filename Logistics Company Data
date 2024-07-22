@@ -58,7 +58,7 @@ customers.customer_ID
 FROM customers
 LEFT JOIN shipments
 ON customers.customer_ID = shipments.sender_ID
-ORDER BY customers.customer_ID asc
+ORDER BY customers.customer_ID asc;
 
 #2. Select all the customer IDs, customer names, customer emails, and shipping methods from the database, but only for the customers we have detailed shipping history for.
 
@@ -70,5 +70,18 @@ customers.customer_ID
 FROM customers
 INNER JOIN shipments
 ON customers.customer_ID = shipments.sender_ID
-ORDER BY customers.customer_ID asc
+ORDER BY customers.customer_ID asc;
 
+#3. Select all the customer IDs, customer names, customer emails, and shipping methods from the database, but only for the customers we have detailed shipping history for 
+and who have only used the 'Standard' shipping method before.
+
+SELECT distinct 
+customers.customer_ID
+,customers.customer_name
+,customers.contact_email
+,shipments.shipping_method
+FROM customers
+INNER JOIN shipments
+ON customers.customer_ID = shipments.sender_ID
+WHERE shipments.shipping_method = 'Standard'
+ORDER BY customers.customer_ID asc;
