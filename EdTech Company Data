@@ -139,3 +139,16 @@ WHERE Subject = 'Economics'
 AND Current = 'Yes';
 
 #3. Find the names of the authors who wrote the textbooks. Your answer should include the name of the course, the name of the textbook, and the name of the author.
+
+SELECT CourseName, Title, Name
+FROM Courses
+INNER JOIN Textbooks
+ON Courses.CourseID = Textbooks.CourseID
+LEFT JOIN AuthorTextbookLink
+ON Textbooks.TextbookID = AuthorTextbookLink.TextbookID
+LEFT JOIN Author
+ON AuthorTextbookLink.AuthorID = Author.AuthorID
+WHERE Subject = 'Economics'
+AND Current = 'Yes'
+ORDER BY Name;
+
